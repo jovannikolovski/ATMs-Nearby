@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM SEARCH APP</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+			
+</head>
+<body>
+	<div class="container-fluid">
+      <div class="header clearfix">
+        <h1 class="text-muted text-center"><strong>ATMs Nearby</strong></h1>
+      </div>
+
+      <div class="jumbotron custom-jumbotron">
+        <h2 class="main-message">Click to find the closest ATMs around</h2>
+        <form id ="myForm">
+        	<button id="search_btn" type="button" class="btn btn-primary search-btn">Search</button>
+        </form>
+      </div>
+  	</div>
+
+  	<div class="container">
+		<div class="col-lg-12">
+			<div id="bookmarksResults"></div>
+		</div>
+	</div>
+
+	<div id="map_atm_location"></div>
+
+	<footer class="footer">
+		<p class="text-center">&copy; 2017. ATMs Nearby App</p>
+	</footer>
+
+    <script type="text/javascript" src="js/script.js"> </script>
+	<!-- Google APIs -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQp9JfkhAZ_VaAnoJmSbOoDHSLnjPAEpw&callback=initMap&libraries=places"></script>
+	
+
+</body>
+</html>
